@@ -12,6 +12,11 @@ if __name__ == "__main__":
 
     while True:
         a = input()
+        try:
+            float(a)
+        except ValueError:
+            print("ERR: Numbers only!")
+            continue
         message['Time'] = (datetime.now()).strftime("%d-%b-%Y %H:%M:%S:%f")
         message['Value'] = a
         message_json = json.dumps( message )
