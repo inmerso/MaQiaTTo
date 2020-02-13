@@ -12,17 +12,21 @@ if __name__ == "__main__":
 
     while True:
         a = input()
+
         try:
             float(a)
         except ValueError:
             print("ERR: Numbers only!")
             continue
+
+        if a == "0":
+            print("Exiting...")
+            break
+        
         message['Time'] = (datetime.now()).strftime("%d-%b-%Y %H:%M:%S:%f")
         message['Value'] = a
         message_json = json.dumps( message )
-        if a != "0":
-            client.publish("DummyTopic", message_json)
-        else:
-            break
-    
+        
+        client.publish("DummyTopic", message_json)
+        
     client.disconnect()
