@@ -22,6 +22,10 @@ if __name__ == "__main__":
         coordinates = splitInfo[2] + ',' + splitInfo[3]
         graphArray.append(coordinates)
 
+    if len(graphArray) == 0:
+        print("No data present!")
+        exit(1)
+    
     datestamp, value = np.loadtxt(graphArray,delimiter=',', unpack=True, converters={ 0: convert_time})
 
     fig = plt.figure()
