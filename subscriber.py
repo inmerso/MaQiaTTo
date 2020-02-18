@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from paho.mqtt.client import Client
 from databaseHandler import db_add
 
