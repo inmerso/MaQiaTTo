@@ -32,7 +32,7 @@ def DummyTopicDataHandler(data):
     dbObj.add_entry("insert into Dummy_Topic_Data (Sensor, Time, Value) values (?,?,?)", [sensor, time, value])
     del dbObj
 
-    print("Entry added")
+    print("%s Entry added, value: %s" % (time, value))
 
 
 def db_add(topic, data_json):
