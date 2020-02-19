@@ -22,6 +22,15 @@ At any time, by using:
 you can obtain the plot of the data currently in the database file.
 
 ## Prerequisites
+A MQTT packet broker is required to execute the code in this repository.
+You can get one with:
+
+    $ sudo apt install mosquitto
+
+To start the packet broker service, type:
+
+    $ service mosquitto start
+
 You need to have *paho-mqtt* installed to use these python sources.
 Use:
 
