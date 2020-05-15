@@ -10,8 +10,8 @@ this will create the file *storage.db*
 
 Then, open a terminal to run the Publisher -where you can write the messages
 you want to publish- and execute the subscriber in another terminal.
-Publisher and subscriber are set to exchange message on the same topic.
-Publisher stops if you insert value 0.
+Publisher and subscriber are set to exchange messages on the same topic.
+Publisher stops when you insert value 0.
 The subscriber will also add entries to the db using databaseHandler.py
 (you don't have to execute this file).
 
