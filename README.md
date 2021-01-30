@@ -1,5 +1,5 @@
 # MaQiaTTo
-Experimenting with MQTT
+Experimenting with MQTT.
 
 ## Use
 First, use the script to initialize the database file:
@@ -10,16 +10,16 @@ this will create the file *storage.db*
 
 Then, open a terminal to run the Publisher -where you can write the messages
 you want to publish- and execute the subscriber in another terminal.
-Publisher and subscriber are set to exchange messages on the same topic.
+Publisher and subscriber are configured to exchange messages on the same topic.
 Publisher stops when you insert value 0.
-The subscriber will also add entries to the db using databaseHandler.py
-(you don't have to execute this file).
+The subscriber will also add entries to the database by using a function inside
+databaseHandler.py (but you don't have to execute this file).
 
 At any time, by using:
 
     $ python plotData.py
 
-you can obtain the plot of the data currently in the database file.
+you can obtain the plot of the data currently present in the database file.
 
 ## Prerequisites
 A MQTT packet broker is required to execute the code in this repository.
@@ -37,3 +37,7 @@ Use:
     $ pip install paho-mqtt
 
 or refer to: https://pypi.org/project/paho-mqtt/
+
+You can resolve dependencies to run the plotData scirpt with
+
+    $ pip3 install numpy, matplotlib
