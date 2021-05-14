@@ -38,6 +38,6 @@ Use:
 
 or refer to: https://pypi.org/project/paho-mqtt/
 
-You can resolve dependencies to run the plotData scirpt with
+You can resolve dependencies to run the plotData script with
 
     $ pip3 install numpy, matplotlib
