@@ -4,7 +4,7 @@ Experimenting with MQTT.
 ## Use
 First, use the script to initialize the database file:
 
-    $ python init_database.py
+    $ python3 init_database.py
 
 this will create the file *storage.db*
 
@@ -17,7 +17,7 @@ databaseHandler.py (but you don't have to execute this file).
 
 At any time, by using:
 
-    $ python plotData.py
+    $ python3 plotData.py
 
 you can obtain the plot of the data currently present in the database file.
 
@@ -29,7 +29,7 @@ You can get one with:
 
 To start the packet broker service, type:
 
-    $ service mosquitto start
+    $ sudo service mosquitto start
 
 You need to have *paho-mqtt* installed to use these python sources.
 Use:
